@@ -116,6 +116,17 @@ app.delete('/cursos/:id', (request, response) => {
     response.json('Successfully delete')
 });
 
+app.delete('/estudiantes/:idE', (request, response) => {
+    const {idE} = request.params;
+
+    estudiantes.forEach((estudiante, i)=>{
+        if(estudiante.idE == idE){
+            estudiante.splice(i, 1)
+        }
+    })
+    response.json('Successfully delete')
+});
+
 app.use(express.static(path.join(__dirname + '/public')));
 
 

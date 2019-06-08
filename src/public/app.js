@@ -145,7 +145,7 @@ $(function () {
                                 
                              </td>
                              <td>
-                             <button class="delete-button">Delete</button>
+                             <button class="delete-button2">Delete</button>
                              </td>
                          </tr>
                      `)
@@ -176,4 +176,17 @@ $(function () {
          });
              
      });
+
+     $('table').on('click', '.delete-button2', function(){
+        let row = $(this).closest('tr');
+        let idE =row.find('.idE').text();
+        $.ajax({
+            url: `/estudiantes/${idE}`,
+            method: 'DELETE',
+            success: function(response){
+                $('#getEstudiantes').click();
+            }
+        });
+    });
+   
 });
