@@ -28,21 +28,21 @@ const cursos = [
 const estudiantes = [
     {
         idE:1,
-        nameE:'Java',
-        correoE:'Java to start',
+        nameE:'Valentina',
+        correoE:'Valentina@',
         telE:200
     },
     {
         idE:2,
-        nameE:'phyton',
-        correoE:'phyton to start',
-        telE:200
+        nameE:'Sebastian',
+        correoE:'Sebastian@',
+        telE:233
     },
     {
         idE:3,
-        nameE:'Php',
-        correoE:'Php to start',
-        telE:200
+        nameE:'Daniela',
+        correoE:'Daniela@',
+        telE:222
     }
 ];
 

@@ -105,12 +105,6 @@ $(function () {
                              <td class ="id">${curso.id}</td>
                              <td>
                                  <h3  class = "name" >${curso.name}:<h3/>
-                                 <form id="inscripcionForm">
-                                 <input value="Nombre" type="text" id="newNombre"/>
-                                 <input value="Descripción" type="text" id="newDescripcion"/>
-                                 <input value="Valor" type="text" id="newValor"/>
-                                 <button  type="submit">Agregar inscripcion</button>
-                             </form>
                              </td>
                              
                              <td>
@@ -120,9 +114,6 @@ $(function () {
                                 <h5  class = "cost" >Precio: ${curso.cost}<h5/>
                              </td>
                             
-                             <td>
-                             <button class="delete-button">Delete</button>
-                             </td>
                          </tr>
                      `)
                  })
@@ -139,7 +130,7 @@ $(function () {
               estudiantes.forEach(estudiante => {
                      tbody.append(`
                          <tr>
-                             <td class ="id">${estudiante.id}</td>
+                             <td class ="id">${estudiante.idE}</td>
                              <td>
                                  <input type = "text"  class = "nameE" value = "${estudiante.nameE}"/>
                              </td>
