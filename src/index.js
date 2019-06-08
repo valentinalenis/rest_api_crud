@@ -84,7 +84,7 @@ app.post('/estudiantes', (request, response)=>{
         nameE:nameE,
         correoE:correoE,
         telE:telE
-    });dsaa
+    });
     response.json('successfully created');
     console.log(estudiantes);
 });
