@@ -3,7 +3,7 @@ $(function () {
        $.ajax({
            url: '/cursos',
            success: function(cursos) {
-             let tbody = $('tbody');
+             let tbody = $('#coordinador');
              tbody.html('');
              cursos.forEach(curso => {
                     tbody.append(`
@@ -134,7 +134,7 @@ $(function () {
         $.ajax({
             url: '/estudiantes',
             success: function(estudiantes) {
-              let tbody = $('#interesado');
+              let tbody = $('#estudiantes');
               tbody.html('');
               estudiantes.forEach(estudiante => {
                      tbody.append(`
